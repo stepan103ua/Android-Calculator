@@ -1,0 +1,327 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/memory"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:gravity="right|center"
+        android:onClick="onMemClick"
+        android:text=""
+        android:textColor="#7C6D6D"
+        android:textSize="30dp"
+        app:layout_constraintBottom_toTopOf="@+id/input"
+        app:layout_constraintEnd_toEndOf="@+id/tableLayout"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/tableLayout"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/input"
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:gravity="right"
+        android:hint="0"
+        android:textColor="#F44336"
+        android:textSize="50sp"
+        app:layout_constraintBottom_toTopOf="@+id/tableLayout"
+        app:layout_constraintEnd_toEndOf="@+id/tableLayout"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/tableLayout"
+        tools:ignore="MissingConstraints" />
+
+    <TableLayout
+        android:id="@+id/tableLayout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="6dp">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/butSqrt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:width="100dp"
+                android:height="100dp"
+                android:onClick="onRootClick"
+                android:scrollbarFadeDuration="250"
+                android:text="√"
+                android:textColor="#F44336"
+                android:textSize="24sp"
+                app:backgroundTint="#000000" />
+
+            <Button
+                android:id="@+id/butDel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:width="100dp"
+                android:height="100dp"
+                android:onClick="OnDelClick"
+                android:scrollbarFadeDuration="250"
+                android:text="del"
+                android:textColor="#F44336"
+                android:textSize="24sp"
+                app:backgroundTint="#000000" />
+
+            <Button
+                android:id="@+id/butR"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:width="100dp"
+                android:height="100dp"
+                android:onClick="onMinNumberClick"
+                android:scrollbarFadeDuration="250"
+                android:text="-()"
+                android:textColor="#F44336"
+                android:textSize="34sp"
+                app:backgroundTint="#000000" />
+
+            <Button
+                android:id="@+id/butDiv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:width="100dp"
+                android:height="100dp"
+                android:onClick="onDivClick"
+                android:scrollbarFadeDuration="250"
+                android:text="÷"
+                android:textColor="#F44336"
+                android:textSize="34sp"
+                app:backgroundTint="#000000" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/but7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:width="100dp"
+                android:height="100dp"
+                android:onClick="onButton7Click"
+                android:scrollbarFadeDuration="250"
+                android:text="7"
+                android:textSize="34sp"
+                app:backgroundTint="#000000" />
+
+            <Button
+                android:id="@+id/but8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:width="100dp"
+                android:height="100dp"
+                android:onClick="onButton8Click"
+                android:scrollbarFadeDuration="250"
+                android:text="8"
+                android:textSize="34sp"
+                app:backgroundTint="#000000" />
+
+            <Button
+                android:id="@+id/but9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:width="100dp"
+                android:height="100dp"
+                android:onClick="onButton9Click"
+                android:scrollbarFadeDuration="250"
+                android:text="9"
+                android:textSize="34sp"
+                app:backgroundTint="#000000" />
+
+            <Button
+                android:id="@+id/butMul"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:width="100dp"
+                android:height="100dp"
+                android:onClick="onMulClick"
+                android:scrollbarFadeDuration="250"
+                android:text="⨯"
+                android:textColor="#F44336"
+                android:textSize="34sp"
+                app:backgroundTint="#000000" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/but4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:width="100dp"
+                android:height="100dp"
+                android:onClick="onButton4Click"
+                android:scrollbarFadeDuration="250"
+                android:text="4"
+                android:textSize="34sp"
+                app:backgroundTint="#000000" />
+
+            <Button
+                android:id="@+id/but5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:width="100dp"
+                android:height="100dp"
+                android:onClick="onButton5Click"
+                android:scrollbarFadeDuration="250"
+                android:text="5"
+                android:textSize="34sp"
+                app:backgroundTint="#000000" />
+
+            <Button
+                android:id="@+id/but6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:width="100dp"
+                android:height="100dp"
+                android:onClick="onButton6Click"
+                android:scrollbarFadeDuration="250"
+                android:text="6"
+                android:textSize="34sp"
+                app:backgroundTint="#000000" />
+
+            <Button
+                android:id="@+id/butMin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:width="100dp"
+                android:height="100dp"
+                android:onClick="onMinClick"
+                android:scrollbarFadeDuration="250"
+                android:text="-"
+                android:textColor="#F44336"
+                android:textSize="34sp"
+                app:backgroundTint="#000000" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/but1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:width="100dp"
+                android:height="100dp"
+                android:onClick="onButton1Click"
+                android:scrollbarFadeDuration="250"
+                android:text="1"
+                android:textSize="34sp"
+                app:backgroundTint="#000000" />
+
+            <Button
+                android:id="@+id/but2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:width="100dp"
+                android:height="100dp"
+                android:onClick="onButton2Click"
+                android:scrollbarFadeDuration="250"
+                android:text="2"
+                android:textSize="34sp"
+                app:backgroundTint="#000000" />
+
+            <Button
+                android:id="@+id/but3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:width="100dp"
+                android:height="100dp"
+                android:onClick="onButton3Click"
+                android:scrollbarFadeDuration="250"
+                android:text="3"
+                android:textSize="34sp"
+                app:backgroundTint="#000000" />
+
+            <Button
+                android:id="@+id/butPlus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:width="100dp"
+                android:height="100dp"
+                android:onClick="onPlusClick"
+                android:scrollbarFadeDuration="250"
+                android:text="+"
+                android:textColor="#F44336"
+                android:textSize="34sp"
+                app:backgroundTint="#000000" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/butC"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:width="100dp"
+                android:height="100dp"
+                android:onClick="onCClick"
+                android:scrollbarFadeDuration="250"
+                android:text="C"
+                android:textColor="#F44336"
+                android:textColorLink="#E91E63"
+                android:textSize="34sp"
+                app:backgroundTint="#000000" />
+
+            <Button
+                android:id="@+id/but0"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:width="100dp"
+                android:height="100dp"
+                android:onClick="onButton0Click"
+                android:scrollbarFadeDuration="250"
+                android:text="0"
+                android:textSize="34sp"
+                app:backgroundTint="#000000" />
+
+            <Button
+                android:id="@+id/butKoma"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:width="100dp"
+                android:height="100dp"
+                android:onClick="onComaClick"
+                android:scrollbarFadeDuration="250"
+                android:text="."
+                android:textColor="#F44336"
+                android:textSize="34sp"
+                app:backgroundTint="#000000" />
+
+            <Button
+                android:id="@+id/butEq"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:width="100dp"
+                android:height="100dp"
+                android:onClick="onEqClick"
+                android:scrollbarFadeDuration="250"
+                android:text="="
+                android:textColor="#F44336"
+                android:textSize="34sp"
+                app:backgroundTint="#000000" />
+        </TableRow>
+    </TableLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
